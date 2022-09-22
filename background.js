@@ -1,4 +1,10 @@
-const blockList = ["*://*.twitch.tv/*", "*://*.youtube.com/*"];
+const blockList = [
+  "*://*.twitch.tv/*",
+  "*://*.youtube.com/*",
+  "*://*.reddit.com/*",
+  "*://*.wowhead.com/*",
+  "*://*.worldofwarcraft.com/*",
+];
 
 chrome.webRequest.onBeforeRequest.addListener(
   () => {
